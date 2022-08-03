@@ -20,8 +20,11 @@ public class JwtUserDetailsService implements UserDetailsService {
 		if ("mehLabs".equals(username)) {
 			return new User("mehLabs", "$2a$10$Us7FAUDwSDnFCV7jCfmIS.zzhvOOUFHfC2x84VdOl3sU3.R8sPGju",
 					new ArrayList<>());
-		} else {
-			throw new UsernameNotFoundException("User not found with username: " + username);
-		}
+		} 
+                if ("argentinaprograma".equals(username)){
+                        return new User("argentinaprograma", "$2a$10$QA..ixQ7VW5tYSmOAnRkCO.6fRzlqLyRhVZ7u2qUZjD0aOOdWHwSO",
+					new ArrayList<>());
+                }
+                throw new UsernameNotFoundException("User not found with username: " + username);
 	}
 }
