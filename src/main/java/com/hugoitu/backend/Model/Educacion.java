@@ -7,6 +7,7 @@ package com.hugoitu.backend.Model;
 import java.util.List;
 import java.util.Objects;
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -84,6 +85,7 @@ public class Educacion {
     private String img;
     private String titulo;
     private String escuela;
+    @Column(columnDefinition = "TEXT")
     private String descripcion;
     private int inicio;
     private int fin;

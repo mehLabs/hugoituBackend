@@ -5,6 +5,7 @@
 package com.hugoitu.backend.Model;
 
 import java.sql.Date;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -29,6 +30,7 @@ public class Persona {
     private Date fecha_nacimiento;
     private String nacionalidad;
     private String mail;
+    @Column(columnDefinition = "TEXT")
     private String sobre_mi;
     private String ocupacion;
     private String img_background;

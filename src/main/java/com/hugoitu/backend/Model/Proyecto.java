@@ -7,6 +7,7 @@ package com.hugoitu.backend.Model;
 import java.util.List;
 import java.util.Objects;
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -75,6 +76,7 @@ public class Proyecto {
     private Long id_proyecto;
     private String img;
     private String title;
+    @Column(columnDefinition = "TEXT")
     private String description;
     private Long id_tecnologia;
     private Long id_enlace;

@@ -5,6 +5,7 @@
 package com.hugoitu.backend.Model;
 
 import java.util.Objects;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -82,6 +83,7 @@ public class Experiencia_Laboral {
     private String inicio;
     private String fin;
     private String posicion;
+    @Column(columnDefinition = "TEXT")
     private String descripcion;
     private String empresa;
     private String img;
