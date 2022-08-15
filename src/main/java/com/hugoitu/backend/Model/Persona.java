@@ -30,7 +30,7 @@ public class Persona {
     private Date fecha_nacimiento;
     private String nacionalidad;
     private String mail;
-    @Column(columnDefinition = "TEXT")
+    @Column(length = 3000) 
     private String sobre_mi;
     private String ocupacion;
     private String img_background;

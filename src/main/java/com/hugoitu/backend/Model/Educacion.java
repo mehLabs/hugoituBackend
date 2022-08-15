@@ -85,7 +85,7 @@ public class Educacion {
     private String img;
     private String titulo;
     private String escuela;
-    @Column(columnDefinition = "TEXT")
+    @Column(length = 3000) 
     private String descripcion;
     private int inicio;
     private int fin;

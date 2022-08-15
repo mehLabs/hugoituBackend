@@ -76,7 +76,7 @@ public class Proyecto {
     private Long id_proyecto;
     private String img;
     private String title;
-    @Column(columnDefinition = "TEXT")
+    @Column(length = 3000) 
     private String description;
     private Long id_tecnologia;
     private Long id_enlace;

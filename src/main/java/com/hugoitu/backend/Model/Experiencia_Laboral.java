@@ -83,7 +83,7 @@ public class Experiencia_Laboral {
     private String inicio;
     private String fin;
     private String posicion;
-    @Column(columnDefinition = "TEXT")
+    @Column(length = 3000) 
     private String descripcion;
     private String empresa;
     private String img;
