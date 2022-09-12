@@ -279,7 +279,7 @@ public class Controller {
         }
         for (int i = 0; i < original.size(); i++ ){
             if (!proyectos.contains(original.get(i))){
-                interProyecto.deleteProyecto(original.get(i).getId_tecnologia());
+                interProyecto.deleteProyecto(original.get(i).getId_proyecto());
             }
         }
     }
