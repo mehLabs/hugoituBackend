@@ -6,6 +6,7 @@ package com.hugoitu.backend.Service;
 
 import com.hugoitu.backend.Model.Persona;
 import com.hugoitu.backend.Repository.PersonaRepositorio;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +21,8 @@ public class PersonaServicio implements IPersonaServicio{
     
     @Override
     public Persona getPersona() {
-        return repo.findAll().get(0);
+        List<Persona> personas = repo.findAll();
+        return !personas.isEmpty() ? personas.get(0) : new Persona();
     }
 
     @Override
