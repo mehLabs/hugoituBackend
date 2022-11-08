@@ -64,6 +64,9 @@ public class Proyecto {
         if (!Objects.equals(this.id_proyecto, other.id_proyecto)) {
             return false;
         }
+        if (!Objects.equals(this.github, other.github)) {
+            return false;
+        }
         if (!Objects.equals(this.id_tecnologia, other.id_tecnologia)) {
             return false;
         }
@@ -81,6 +84,7 @@ public class Proyecto {
     private Long id_tecnologia;
     private Long id_enlace;
     private String enlace;
+    private String github;
     
     /*
     @OneToMany(cascade = CascadeType.ALL)
