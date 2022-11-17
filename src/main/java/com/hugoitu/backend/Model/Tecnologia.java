@@ -21,12 +21,13 @@ import lombok.Setter;
 public class Tecnologia {
 
     @Override
+    public String toString() {
+        return "Tecnologia{" + "id_tecnologia=" + id_tecnologia + ", nombre=" + nombre + ", porcentaje=" + porcentaje + ", categoria=" + categoria + ", img=" + img + '}';
+    }
+
+    @Override
     public int hashCode() {
         int hash = 5;
-        hash = 83 * hash + Objects.hashCode(this.id_tecnologia);
-        hash = 83 * hash + Objects.hashCode(this.nombre);
-        hash = 83 * hash + this.porcentaje;
-        hash = 83 * hash + Objects.hashCode(this.categoria);
         return hash;
     }
 
@@ -51,6 +52,9 @@ public class Tecnologia {
         if (!Objects.equals(this.categoria, other.categoria)) {
             return false;
         }
+        if (!Objects.equals(this.img, other.img)) {
+            return false;
+        }
         return Objects.equals(this.id_tecnologia, other.id_tecnologia);
     }
 
@@ -60,11 +64,8 @@ public class Tecnologia {
     private String nombre;
     private int porcentaje;
     private String categoria;
+    private String img;
 
-    @Override
-    public String toString() {
-        return "Tecnologia{" + "id_tecnologia=" + id_tecnologia + ", nombre=" + nombre + ", porcentaje=" + porcentaje + ", categoria=" + categoria + '}';
-    }
     
     
 }
