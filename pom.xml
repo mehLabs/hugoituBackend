@@ -14,7 +14,7 @@
 	<name>Hugoitu Backend</name>
 	<description>This is where I store my data for my personal webpage</description>
 	<properties>
-		<java.version>18</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
